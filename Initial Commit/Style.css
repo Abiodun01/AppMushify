@@ -17,6 +17,8 @@ html {
     --color-accent: Red;
     --color-headings:#1b0760;
     --color-body:#918ca4;
+    --color-border:#ccc;
+    --border-radius: 30px;
 
 }
 
@@ -79,9 +81,9 @@ A {
 /* Links */
 .link-arrow {
     color:var (--color-accent);
-    text-transform: uppercase;
     font-size: 2rem;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .link-arrow::after {
@@ -106,10 +108,10 @@ A {
 
 .badge {
     border-radius: 20px;
-    padding: 0.5rem 2rem;
-    font-weight: 400;
-    white-space: nowrap;
     font-size: 2rem;
+    font-weight: 400;
+    padding: 0.5rem 2rem;
+    white-space: nowrap;
 }
 
 .badge--primary {
@@ -139,9 +141,9 @@ A {
 
 /* List */
 .list {
+    color: var(--color-headings);
     list-style: none;
     padding-left: 0;
-    color: var(--color-headings);
 }
 
 .list--inline .list__item {
@@ -153,8 +155,8 @@ A {
 
 /* ICONS */
 .icon {
-    width:40px;
     height: 40px;
+    width:40px;
 }
 
 .icon--primary {
@@ -162,13 +164,13 @@ A {
 }
 
 .icon-container {
+    align-items: center;
     background: #f3f9fa;
-    width: 64px;
-    height: 64px;
     border-radius: 100%;
     display: inline-flex;
+    height: 64px;
     justify-content: center;
-    align-items: center;
+    width: 64px;
 }
 
 /* Button */
@@ -215,11 +217,50 @@ A {
 }
 
 .btn--block {
-    width: 100%;
     display: inline-block;
+    width: 100%;
 }
 
-@media screen and (min-width:1024px) 
+@media screen and (min-width:1024px) {
     .btn {
         font-size: 1.5rem;
+}}
+
+
+/* Inputs */
+.input {
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-border);
+    color: var(--color-headings);
+    font-size: 2rem;
+    outline: 0;
+    padding: 1.5rem 3.5rem;
+}
+
+::placeholder {
+    color: #cdcbd7;
+}
+
+.input-group {
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    display: flex;
+}
+
+.input-group .input {
+    border: 0;
+    flex-grow: 1;
+    padding: 1.5rem 1rem;
+}
+
+.input-group .btn {
+    margin: 4px;
+}
+
+@media screen and(min-width: 1024px) {
+    .input {
+        font-size: 1.5rem;
+        
+    }
+    
 }
