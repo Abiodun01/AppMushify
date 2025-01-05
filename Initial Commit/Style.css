@@ -335,6 +335,18 @@ A {
     display: block;
     
 }
+.plan--popular .card__header {
+    position: relative;
+}
+.plan--popular .card__header::before {
+    content: url(Images/popular.svg);
+    width: 40px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 5%;
+    top: -4%;
+}
 
 @media screen and (min-width: 1024) {
     .plan__name {
