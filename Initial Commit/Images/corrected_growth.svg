@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200" height="200">
-  <rect width="100%" height="100%" fill="lightgray"/>
-  <text x="50%" y="50%" font-size="20" text-anchor="middle" fill="black" dy=".3em">Placeholder SVG</text>
-</svg>
