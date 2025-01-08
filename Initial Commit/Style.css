@@ -330,6 +330,9 @@ A {
 }
 
 /* Plans */
+.plan {
+    transition: transform .2s ease-out;
+}
 .plan__name {
     color: #fff;
     margin: 0;
@@ -350,6 +353,9 @@ A {
     margin-right: 1rem;
 }
 
+.card--primary .badge--primary {
+    background: #126de4;
+}
 .card--secondary .badge--secondary {
     background: #02cdf1;
 }
@@ -360,6 +366,9 @@ A {
     letter-spacing: 1px;
     display: block;
     
+}
+.plan--popular {
+    transform: scale(1.1);
 }
 .plan--popular .card__header {
     position: relative;
@@ -374,6 +383,12 @@ A {
     top: -4%;
 }
 
+.plan:hover {
+    transform: scale(1.05);
+}
+.plan--popular:hover {
+    transform: scale(1.15);
+}
 @media screen and (min-width: 1024) {
     .plan__name {
         font-size: 1.4rem;
@@ -739,3 +754,14 @@ callout__heading {
     }
     
 }
+
+/* PLANS BLOCK */
+.block-plans .grid {
+    gap:8rem 4rem;
+}
+
+.block-plans .card {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
