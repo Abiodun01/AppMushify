@@ -14,82 +14,61 @@
     <link rel="stylesheet" href="Style.css" />
   </head>
   <body>
-    <footer class="block block--dark footer">
-      <div class="container grid footer__sections">
-        <section class="collapsible collapsible--expanded footer__sections">
-          <header class="collapsible__header">
-            <h2 class="collapsible__heading footer__heading">PRODUCTS</h2>
-
-            <div class="icon icon--white collapsible__chevron">
-              <img src="Images/chevron.svg" alt="" />
-            </div>
-          </header>
-          <div class="collapsible__content">
-            <ul class="list">
-              <li><a href="#">Website Hosting</a></li>
-              <li><a href="#">Free Automated Wordpress</a></li>
-              <li></li>
-              <a href="#">Migrations</a>
-            </ul>
-          </div>
-        </section>
-        <section class="collapsible footer__sections">
-          <header class="collapsible__header">
-            <h2 class="collapsible__heading footer__heading">COMPANY</h2>
-
-            <div class="icon icon--white collapsible__chevron">
-              <img src="Images/chevron.svg" alt="" />
-            </div>
-          </header>
-          <div class="collapsible__content">
-            <ul class="list">
-              <li><a href="#">About</a></li>
-              <li><a href="#">Affilates</a></li>
-              <li></li>
-              <a href="#">Blog</a>
-            </ul>
-          </div>
-        </section>
-        <section class="collapsible footer__sections">
-          <header class="collapsible__header">
-            <h2 class="collapsible__heading footer__heading">SUPPORT</h2>
-
-            <div class="icon icon--white collapsible__chevron">
-              <img src="Images/chevron.svg" alt="" />
-            </div>
-          </header>
-          <div class="collapsible__content">
-            <ul class="list">
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Knowledge Base</a></li>
-              <li></li>
-              <a href="#">FAO</a>
-            </ul>
-          </div>
-        </section>
-        <section class="collapsible footer__sections">
-          <header class="collapsible__header">
-            <h2 class="collapsible__heading footer__heading">DoMAINS</h2>
-
-            <div class="icon icon--white collapsible__chevron">
-              <img src="Images/chevron.svg" alt="" />
-            </div>
-          </header>
-          <div class="collapsible__content">
-            <ul class="list">
-              <li><a href="#">Domain Checker</a></li>
-              <li><a href="#">Domain Transfer</a></li>
-              <li></li>
-              <a href="#">Free Dmain</a>
-            </ul>
-          </div>
-        </section>
-        <section class="footer__brand">
-          <img src="Images/logo.svg" alt="" />
-          <p class="footer__copyright">Copyright 2020 Adedewe Abiodun</p>
-        </section>
+    <header>
+      <nav class="nav collapsible">
+        <a class="nav__brand" href="/"><img src="Images/logo.svg" alt="" /></a>
+        <div class="icon icon--white nav__toggler">
+          <img src="Images/menu_updated.svg" alt="" />
+        </div>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="#">Hosting</a></li>
+          <li class="nav__item"><a href="#">VPS</a></li>
+          <li class="nav__item"><a href="#">Domain</a></li>
+          <li class="nav__item"><a href="#">Pricing</a></li>
+        </ul>
+      </nav>
+      <script src="Images/main.js"></script>
+    </header>
+    <section class="block block--dark block--skewed-left hero">
+      <div class="container grid grid--1x2">
+        <header class="block__header hero__content">
+          <h1 class="block__heading">Cloud Hosting for Pros</h1>
+          <p class="hero__tagline">
+            Deploy your websites in less than 60seconds
+          </p>
+          <a href="" class="btn btn--accent btn--stretched">Get Started</a>
+        </header>
+        <img class="hero__image" src="Images/banner.png" alt="" />
       </div>
-    </footer>
+    </section>
+    <section class="block container block-domain">
+      <header class="block__header">
+        <h2>Starting at $9 per month</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </header>
+      <div class="input-group">
+        <input
+          type="text"
+          class="input"
+          placeholder="Enter domain name here...."
+        />
+        <button class="btn btn--accent">
+          <div class="icon icon--white">
+            <img src="Images/search.svg" alt="" />
+          </div>
+          Search
+        </button>
+      </div>
+      <ul class="list block-domain__prices">
+        <li><span class="badge badge--secondary">.com $9</span></li>
+        <li>.sg $10</li>
+        <li>.space $11</li>
+        <li>.info $14</li>
+        <li>.net $10</li>
+        <li>.xyz $10</li>
+      </ul>
+    </section>
+
     <script src="Images/main.js"></script>
   </body>
 </html>
