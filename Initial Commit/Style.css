@@ -217,7 +217,7 @@ A {
     font-weight: 600;
     margin: 1rem 0;
     outline: 0;
-    padding: 2rem 3rem;
+    padding: 2rem 4vw;
     text-align:center;
     text-transform: uppercase;
     white-space: nowrap;
@@ -735,7 +735,7 @@ callout__heading {
 }
 
 .block-domain .input-group{
-    box-shadow: 0 0 30px 20px #e6ebee;
+    box-shadow: 0 0 30px 20px #ebebee;
     border: 0;
     margin: 4rem auto;
     max-width: 670;
@@ -743,9 +743,10 @@ callout__heading {
 }
 
 .block-domain__prices {
+    color: var(--color-headings);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 6fr) ;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 6rem) ;
     list-style: none; 
     font-size: 2rem;
     font-weight: 600;
