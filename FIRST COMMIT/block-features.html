@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<link rel="stylesheet" href="Play.css">
-<link rel="stylesheet" href="normalize.css">
-<body>
+<section class="block container">
+  <link rel="stylesheet" href="styles.css" />
+  <header class="block__header">
 <!-- SVG Sprite -->
 <svg width="0" height="0" class="hidden">
   <symbol
@@ -431,14 +424,13 @@
     </g>
   </symbol>
 </svg>
-<link rel="stylesheet" href="Play.css" />
-<link rel="stylesheet" href="normalize.css">
-<!-- SVG References -->
- <!-- <h1>God is Good</h1> -->
-<!-- <span class="icon-container">
+<link rel="stylesheet" href="Style.css" />
+ <!-- SVG References -->
+ <h1>God is Good</h1> 
+<span class="icon-container">
   <svg class="icon icon--primary">
     <use xlink:href="#wordpress"></use></svg>
-</span> -->
+</span>
 <!-- <svg class="icon">
   <use xlink:href="#snap"></use></svg
 > -->
@@ -463,62 +455,68 @@
   <use xlink:href="#growth"></use>
 </svg> -->
 </svg>
-<section class="block container">
-  <header class="block__header">
+
+
+
+
     <h2>Host on the Cloud to Keep Growing</h2>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed,
-      voluptatem.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, voluptatem.
     </p>
   </header>
   <article class="grid grid--1x2 feature">
     <div class="feature__content">
+      <!-- <span class="icon-container">
+        <svg class="icon icon--primary">
+          <use xlink:href="sprite.svg#wordpress"></use>
+        </svg>
+      </span> -->
       <span class="icon-container">
         <svg class="icon icon--primary">
-          <use xlink:href="#easy"></use>
+          <use xlink:href="#wordpress"></use>
         </svg>
       </span>
       <h3 class="feature__heading">Super Easy to Use</h3>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-        obcaecati vel ad unde est illo at. Labore excepturi officia dolores!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam obcaecati
+        vel ad unde est illo at. Labore excepturi officia dolores!
       </p>
       <a href="#" class="link-arrow">Learn More</a>
     </div>
     <picture>
       <source
-        type="Images/webp"
-        srcset="Images/easy.webp"
+        type="image/webp"
+        srcset="images/easy.webp 1x, images/easy@2x.webp 2x"
       />
       <source
-        type="Images/jpg"
-        srcset="Images/easy.jpg 1x"
+        type="image/jpg"
+        srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x"
       />
-      <img class="feature__image" src="Images/easy.jpg" alt="" />
+      <img class="feature__image" src="images/easy@2x.jpg" alt="" />
     </picture>
   </article>
   <article class="grid grid--1x2 feature">
     <div class="feature__content">
       <span class="icon-container">
         <svg class="icon icon--primary">
-          <use xlink:href="#computer"></use>
+          <use xlink:href="images/sprite.svg#computer"></use>
         </svg>
       </span>
       <h3 class="feature__heading">Simply Fast Websites</h3>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-        obcaecati vel ad unde est illo at. Labore excepturi officia dolores!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam obcaecati
+        vel ad unde est illo at. Labore excepturi officia dolores!
       </p>
       <a href="#" class="link-arrow">Learn More</a>
     </div>
     <picture>
       <source
-        type="Images/webp"
-        srcset="Images/fast.webp 1x"
+        type="image/webp"
+        srcset="images/fast.webp 1x, images/fast@2x.webp 2x"
       />
       <source
-        type="Images/jpg"
-        srcset="Images/fast.jpg"
+        type="image/jpg"
+        srcset="images/fast.jpg 1x, images/fast@2x.jpg 2x"
       />
       <img class="feature__image" src="images/fast@2x.jpg" alt="" />
     </picture>
@@ -527,20 +525,20 @@
     <div class="feature__content">
       <span class="icon-container">
         <svg class="icon icon--primary">
-          <use xlink:href="#wordpress"></use>
+          <use xlink:href="images/sprite.svg#wordpress"></use>
         </svg>
       </span>
       <h3 class="feature__heading">Wordpress Made Easy</h3>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-        obcaecati vel ad unde est illo at. Labore excepturi officia dolores!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam obcaecati
+        vel ad unde est illo at. Labore excepturi officia dolores!
       </p>
       <a href="#" class="link-arrow">Learn More</a>
     </div>
     <picture>
       <source
-        type="Images/webp"
-        srcset="Images/wordpress@2x.webp"
+        type="image/webp"
+        srcset="images/wordpress.webp 1x, images/wordpress@2x.webp 2x"
       />
       <source
         type="image/jpg"
@@ -553,13 +551,13 @@
     <div class="feature__content">
       <span class="icon-container">
         <svg class="icon icon--primary">
-          <use xlink:href="#clock"></use>
+          <use xlink:href="images/sprite.svg#clock"></use>
         </svg>
       </span>
       <h3 class="feature__heading">24/7 Expert Support</h3>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-        obcaecati vel ad unde est illo at. Labore excepturi officia dolores!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam obcaecati
+        vel ad unde est illo at. Labore excepturi officia dolores!
       </p>
       <a href="#" class="link-arrow">Learn More</a>
     </div>
@@ -572,9 +570,7 @@
         type="image/jpg"
         srcset="images/support.jpg 1x, images/support@2x.jpg 2x"
       />
-      <img class="feature__image" src="Images/support@2x.jpg" alt="" />
+      <img class="feature__image" src="images/support@2x.jpg" alt="" />
     </picture>
   </article>
 </section>
-</body>
-</html>

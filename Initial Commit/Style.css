@@ -205,6 +205,7 @@ A {
     width: 64px;
 }
 
+
 .icon-container--accent {
     background: var(--color-accent);
 }
@@ -485,7 +486,7 @@ A {
 
 @media screen and (min-width: 768px) {
     .grid--1x2 {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -584,7 +585,7 @@ callout__heading {
 .collapsible__content {
     max-height: 0;
     overflow: hidden;
-    opacity: 0;
+    opacity: 0; 
     transition:all 0.3s;
 }
 
@@ -793,12 +794,14 @@ callout__heading {
     width: 100%;
 }
 
-@media screen and (min-width:768) {
+@media screen and (min-width:768px) {
     .feature:nth-of-type(even) .feature__content {
         order: 2;
     }
     
 }
+
+
 
 /* SHOWCASE BLOCK */
 .block-showcase__image >img{
